@@ -3,15 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArteIn Gallery</title>
+    <title>Art Gallery</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
+    <style>
+        .card-img-top {
+            weight: 400px; /* para ajustar el ancho */
+            height: 400px; /* para ajustar la altura */
+            object-fit: cover;
+        }
+        .card-img-logo {
+            height: 200px; /* Ajusta la altura según tus necesidades */
+            object-fit: cover;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra el contenido verticalmente */
+        }
+        .card-text {
+            font-size: 1em; /* Tamaño de fuente base */
+            overflow: auto; /* Permite el scroll si el contenido excede el contenedor */
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">My Art Gallery</a>
+                <a class="navbar-brand" href="#">My ArteIn Gallery</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -67,25 +87,63 @@
         </section>
 
         <section id="projects" class="projects">
-                                       
-          <div class="container-fluid p-0">
-            <div class="row g-0 justify-content-center">
-                <div class="col-md-3">
-                    <img src="./img/logoAI.png" alt="logo" class="img-fluid animated-logo hidden">
+                <div class="container my-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="/img/MontCervin.jpg" class="card-img-top" alt="MontCervin">
+                                <div class="card-body">
+                                    <p class="card-text text-center">The landscape of Cervin Mont🖌️</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="/img/logoAI.png" class="card-img-top animated-image" alt="Logo">
+                                </div>
+                            </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="/img/Matterhorn.jpg" class="card-img-top" alt="Matterhorn">
+                                <div class="card-body">
+                                    <p class="card-text text-center">My look of Matterhorn🖌️</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
-                  <div class="row d-flex align-items-center justify-content-center"><h3>🖌️</h3></div>
-                  <div class="col d-flex align-items-center justify-content-center"><p>The birds don't sing because it's dawn, they sing so that it's dawn🕊 We paint for the dawn🎨🌅 This is how ArteIn Project began</div>
-                  <div class="row d-flex align-items-center justify-content-center"><h3>🖌️</h3></div>
-                  <div class="col-md-6 d-flex align-items-center justify-content-center">My name is MBM. I love simple things: the sea, music and books. My children are my greatest and purest love.I love colors and painting everything. I think colors turn our lives on and off. I began painting out of a desire to perpetuate the transience of human existence. I pay tribute to my grandparents. Especially to my grandmother Inés, who showed me the treasures we painted. She taught me that when we color them, we give them wings and put together the puzzle that we have broken into. Painting is a way of reviving, of treasuring the looks that reached the essence of things. Things that are more than things when we are painting them.</div>
-                </div>  
-            </div>
-        </div>
-        </section>
+
+                <section id="paintedprojects" class="paintedprojetcs">
+                    <div class="container my-5">
+                        <div class="row">
+                            <div class="col-md-4 mb-4 d-flex">
+                                <div class="card flex-grow-1">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">The birds don't sing because it's dawn,they sing so that it's dawn🕊</p>
+                                        <p class="card-text text-center">We paint for the dawn🎨🌅</p>
+                                        <p class="card-text text-center">This is how ArteIn Project began🖌️</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 d-flex">
+                                <div class="card flex-grow-1">
+                                    <img src="/img/Olivo.jpg" class="card-img w-100 animated-image" alt="Logo">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 d-flex">
+                                <div class="card flex-grow-1">
+                                    <div class="card-body">
+                                        <p class="card-text text-center">My name is MBM. I love simple things: the sea, music and books. My children are my greatest and purest love.I love colors and painting everything. I think colors turn our lives on and off. I began painting out of a desire to perpetuate the transience of human existence. I pay tribute to my grandparents. Especially to my grandmother Inés, who showed me the treasures we painted. She taught me that when we color them, we give them wings and put together the puzzle that we have broken into. Painting is a way of reviving, of treasuring the looks that reached the essence of things. Things that are more than things when we are painting them🖌️</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2>Write to me</h2>
+                <h2 class="text-primary text-center">Write to me</h2>
                 <form>
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
@@ -99,7 +157,8 @@
                         <label for="message" class="form-label">Message</label>
                         <textarea class="form-control" id="message" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-outline-primary">Send</button></div>
                 </form>
             </div>
         </section>

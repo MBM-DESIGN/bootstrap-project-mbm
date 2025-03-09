@@ -15,25 +15,10 @@
   padding: 80px 0;
   background-color: #f8f9fa;
 }
-.animated-logo {
-  animation: scaleUp 1.5s ease-in-out;
+.animated-image {
+  transition: transform 0.3s ease-in-out; /* transición suave para la transformación */
 }
 
-@keyframes scaleUp {
-  0% {
-      transform: scale(0.5);
-      opacity: 0;
-  }
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
-}
-.hidden {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.show {
-  opacity: 1;
+.animated-image:hover {
+  transform: scale(1.1); /*para escalar la imagen al 110% al pasar el mouse encima */
 }
