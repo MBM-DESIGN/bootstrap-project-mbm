@@ -1,0 +1,112 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArteIn Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">My Art Gallery</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Matterhorn.jpg" class="d-block w-100" alt="Pintura 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Vandamor.jpg" class="d-block w-100" alt="Pintura 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Olivo.jpg" class="d-block w-100" alt="Pintura 3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/lavandas.jpg" class="d-block w-100" alt="Pintura 3">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="img/Natal.jpg" class="d-block w-100" alt="Pintura 3">
+                    </div>
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+                                       
+          <div class="container-fluid p-0">
+            <div class="row g-0 justify-content-center">
+                <div class="col-md-3">
+                    <img src="./img/logoAI.png" alt="logo" class="img-fluid animated-logo hidden">
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                  <div class="row d-flex align-items-center justify-content-center"><h3>🖌️</h3></div>
+                  <div class="col d-flex align-items-center justify-content-center"><p>The birds don't sing because it's dawn, they sing so that it's dawn🕊 We paint for the dawn🎨🌅 This is how ArteIn Project began</div>
+                  <div class="row d-flex align-items-center justify-content-center"><h3>🖌️</h3></div>
+                  <div class="col-md-6 d-flex align-items-center justify-content-center">My name is MBM. I love simple things: the sea, music and books. My children are my greatest and purest love.I love colors and painting everything. I think colors turn our lives on and off. I began painting out of a desire to perpetuate the transience of human existence. I pay tribute to my grandparents. Especially to my grandmother Inés, who showed me the treasures we painted. She taught me that when we color them, we give them wings and put together the puzzle that we have broken into. Painting is a way of reviving, of treasuring the looks that reached the essence of things. Things that are more than things when we are painting them.</div>
+                </div>  
+            </div>
+        </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Write to me</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p> MBM-DESIGN&copy;2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></scrip>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.home {
+  padding: 0;
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.projects {
+  padding: 80px 0;
+}
+
+.contact {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+.animated-logo {
+  animation: scaleUp 1.5s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
